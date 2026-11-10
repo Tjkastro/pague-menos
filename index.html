@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pague Menos em Tudo | Pagando Mais Barato Ainda</title>
+<meta name="description" content="E-book Pague Menos em Tudo: o guia do custo-benefício. Aprenda a comprar mais barato e economizar até 30% nos gastos do dia a dia. R$ 19,90, acesso imediato.">
+<meta property="og:title" content="Pague Menos em Tudo: o guia do custo-benefício">
+<meta property="og:description" content="Economize até 30% nos gastos do dia a dia com exemplos em números, truques que funcionam e um plano de 30 dias.">
+<meta property="og:image" content="img/capa.jpg">
+<meta property="og:type" content="product">
+<meta name="theme-color" content="#1f2a44">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1f2a44; --navy2:#162036; --green:#16a34a; --green2:#22c55e; --yellow:#FFD23F;
+  --red:#dc2626; --ink:#1e2433; --muted:#5b6475; --paper:#fff; --soft:#f4f7f2; --line:#e3e8df;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Nunito,system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+h1,h2,h3{font-family:Montserrat,system-ui,sans-serif;line-height:1.12;letter-spacing:-.01em}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--green);color:#fff;text-decoration:none;
+  font-family:Montserrat,sans-serif;font-weight:800;font-size:18px;padding:18px 30px;border-radius:14px;
+  box-shadow:0 6px 0 #0f7a36,0 10px 24px rgba(22,163,74,.35);transition:transform .12s ease,box-shadow .12s ease;text-align:center}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 0 #0f7a36,0 14px 28px rgba(22,163,74,.4)}
+.btn:active{transform:translateY(4px);box-shadow:0 2px 0 #0f7a36,0 4px 10px rgba(22,163,74,.3)}
+.btn svg{width:22px;height:22px}
+.tag{display:inline-block;background:var(--yellow);color:var(--navy);font-family:Montserrat,sans-serif;font-weight:900;font-size:13px;
+  letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+section{padding:72px 0}
+.kicker{font-family:Montserrat,sans-serif;font-weight:800;color:var(--green);letter-spacing:.1em;text-transform:uppercase;font-size:13px;margin-bottom:10px}
+.h2{font-size:clamp(28px,4.4vw,40px);color:var(--navy);margin-bottom:14px}
+.lead{font-size:19px;color:var(--muted);max-width:640px}
+
+/* topo */
+.top{background:var(--navy2);color:#cfd6e6;font-size:14px;text-align:center;padding:9px 16px}
+.top b{color:var(--yellow)}
+
+/* hero */
+.hero{background:radial-gradient(1200px 500px at 80% -10%,#2c3b5e 0%,transparent 60%),var(--navy);color:#fff;padding:56px 0 72px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.brand{font-family:Montserrat,sans-serif;font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:13px;color:var(--yellow);margin-bottom:18px}
+.hero h1{font-size:clamp(36px,6vw,60px);font-weight:900;margin:14px 0 18px}
+.hero h1 em{font-style:normal;color:var(--yellow)}
+.hero p.sub{font-size:20px;color:#d7ddeb;max-width:540px;margin-bottom:28px}
+.price{display:flex;align-items:baseline;gap:12px;margin-bottom:22px;flex-wrap:wrap}
+.price .now{font-family:Montserrat,sans-serif;font-weight:900;font-size:44px;color:#fff}
+.price .now small{font-size:22px;vertical-align:top;margin-right:2px}
+.price .note{color:#aeb8cf;font-size:15px}
+.mini{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;color:#c6cee0;font-size:15px}
+.mini span{display:flex;align-items:center;gap:7px}
+.mini svg{width:18px;height:18px;color:var(--green2);flex:none}
+.cover{position:relative;justify-self:center;max-width:380px;width:100%}
+.cover img{border-radius:10px;box-shadow:0 30px 60px rgba(0,0,0,.45),0 0 0 1px rgba(255,255,255,.06);transform:rotate(2deg)}
+.cover .seal{position:absolute;left:-26px;bottom:34px;width:118px;height:118px;border-radius:50%;background:var(--yellow);color:var(--navy);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:Montserrat,sans-serif;font-weight:900;
+  transform:rotate(-10deg);box-shadow:0 10px 24px rgba(0,0,0,.35);text-align:center;line-height:1}
+.seal small{font-size:11px;letter-spacing:.06em}
+.seal b{font-size:34px;margin:2px 0}
+
+/* dor */
+.pain{background:var(--soft)}
+.pain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
+.card .x{width:38px;height:38px;border-radius:10px;background:#fde8e8;color:var(--red);display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-weight:900;font-family:Montserrat}
+.card h3{font-size:18px;color:var(--navy);margin-bottom:8px}
+.card p{color:var(--muted);font-size:16px}
+
+/* números */
+.nums .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+table{width:100%;border-collapse:collapse;font-size:16px;background:#fff;border-radius:16px;overflow:hidden;border:1px solid var(--line)}
+th,td{padding:13px 18px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:var(--navy);color:#fff;font-family:Montserrat,sans-serif;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+td.r,th.r{text-align:right;white-space:nowrap}
+td.r{font-weight:800;color:var(--green)}
+tr.total td{background:#eafbf0;font-weight:800;font-size:18px;border-bottom:0}
+.fine{font-size:14px;color:var(--muted);margin-top:12px}
+
+/* capítulos */
+.chap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+.chap{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}
+.chap .n{font-family:Montserrat,sans-serif;font-weight:900;font-size:22px;color:var(--green);min-width:34px}
+.chap h3{font-size:16px;color:var(--navy);margin-bottom:3px}
+.chap p{font-size:14.5px;color:var(--muted);line-height:1.4}
+
+/* formato de cada capítulo */
+.how{background:var(--navy);color:#fff}
+.how .h2{color:#fff}
+.how .lead{color:#c3cbe0}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:34px}
+.step{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:20px}
+.step .ic{font-size:26px;margin-bottom:10px}
+.step h3{font-size:16px;margin-bottom:6px}
+.step p{font-size:14.5px;color:#c3cbe0;line-height:1.45}
+
+/* por dentro */
+.peek-row{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:30px 4px 18px;margin:0 -4px}
+.peek-row figure{flex:0 0 min(300px,78vw);scroll-snap-align:start}
+.peek-row img{border-radius:10px;border:1px solid var(--line);box-shadow:0 12px 30px rgba(31,42,68,.14);cursor:zoom-in;background:#fff}
+.peek-row figcaption{font-size:14px;color:var(--muted);margin-top:10px;text-align:center}
+.hint{font-size:14px;color:var(--muted)}
+
+/* bônus */
+.bonus-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:34px}
+.bonus{border:2px dashed #b9e8c8;background:#f3fcf6;border-radius:16px;padding:22px}
+.bonus .tag{margin-bottom:12px}
+.bonus h3{font-size:17px;color:var(--navy);margin-bottom:6px}
+.bonus p{font-size:15px;color:var(--muted)}
+
+/* oferta */
+.offer{background:var(--soft)}
+.offer-box{max-width:620px;margin:0 auto;background:#fff;border-radius:22px;border:1px solid var(--line);box-shadow:0 24px 60px rgba(31,42,68,.12);overflow:hidden;text-align:center}
+.offer-head{background:var(--navy);color:#fff;padding:26px 24px}
+.offer-head h2{font-size:26px}
+.offer-body{padding:30px 28px 34px}
+.list{list-style:none;text-align:left;margin:0 auto 26px;max-width:440px}
+.list li{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-size:16px}
+.list li:last-child{border-bottom:0}
+.list svg{width:20px;height:20px;color:var(--green);flex:none;margin-top:3px}
+.big-price{font-family:Montserrat,sans-serif;font-weight:900;font-size:58px;color:var(--navy);line-height:1}
+.big-price small{font-size:26px;vertical-align:top}
+.pay{color:var(--muted);font-size:15px;margin:8px 0 22px}
+.offer .btn{width:100%;max-width:440px}
+.guar{display:flex;gap:14px;align-items:center;text-align:left;max-width:440px;margin:24px auto 0;padding:16px;border-radius:14px;background:#fffbea;border:1px solid #f5e3a1}
+.guar svg{width:40px;height:40px;color:#c99a00;flex:none}
+.guar p{font-size:14.5px;color:#5c4b0a}
+
+/* faq */
+.faq{max-width:760px;margin:30px auto 0}
+details{border-bottom:1px solid var(--line);padding:18px 4px}
+summary{cursor:pointer;font-family:Montserrat,sans-serif;font-weight:800;color:var(--navy);font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--green);font-size:24px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);margin-top:10px;font-size:16px}
+
+footer{background:var(--navy2);color:#a9b3c9;padding:40px 0 110px;font-size:14px;text-align:center}
+footer a{color:#fff}
+footer .disc{max-width:640px;margin:14px auto 0;font-size:13px;color:#8590a8}
+
+/* barra fixa no celular */
+.sticky{position:fixed;left:0;right:0;bottom:0;background:rgba(255,255,255,.97);border-top:1px solid var(--line);padding:10px 16px;
+  display:none;align-items:center;gap:12px;z-index:20;box-shadow:0 -8px 24px rgba(0,0,0,.08);transform:translateY(110%);transition:transform .25s ease}
+.sticky.on{transform:none}
+.sticky .p{font-family:Montserrat,sans-serif;font-weight:900;color:var(--navy);font-size:20px;white-space:nowrap}
+.sticky .p small{display:block;font-family:Nunito;font-weight:600;font-size:12px;color:var(--muted)}
+.sticky .btn{flex:1;padding:14px 16px;font-size:16px}
+
+/* zoom */
+.lb{position:fixed;inset:0;background:rgba(10,14,25,.88);display:none;align-items:center;justify-content:center;z-index:40;padding:20px;cursor:zoom-out}
+.lb.on{display:flex}
+.lb img{max-height:92vh;width:auto;border-radius:8px}
+
+@media (max-width:900px){
+  .hero .wrap,.nums .wrap{grid-template-columns:1fr}
+  .hero{padding:34px 0 56px}
+  .cover{max-width:290px;order:-1}
+  .cover .seal{left:-14px;width:96px;height:96px}
+  .seal b{font-size:27px}
+  .pain-grid,.chap-grid{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .bonus-grid{grid-template-columns:1fr 1fr}
+  .sticky{display:flex}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  section{padding:54px 0}
+  .wrap{padding:0 16px}
+  .hero{text-align:center}
+  .hero p.sub{margin-left:auto;margin-right:auto;font-size:18px}
+  .price,.mini{justify-content:center}
+  .hero .btn{width:100%}
+  .pain-grid,.chap-grid,.steps,.bonus-grid{grid-template-columns:1fr}
+  .steps .step:last-child{grid-column:auto}
+  th,td{padding:11px 12px}
+  .big-price{font-size:50px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="top">Acesso imediato · PDF de 52 páginas · <b>R$ 19,90</b> pagamento único</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="brand">Pagando Mais Barato Ainda</div>
+      <span class="tag">Novo e-book</span>
+      <h1>Pague menos em tudo e <em>economize até 30%</em> todo mês</h1>
+      <p class="sub">O guia do custo-benefício: mercado, contas da casa, carro, casa própria, viagens, cartão e dívidas. Tudo explicado de um jeito simples, com exemplos em números e truques que pouca gente usa.</p>
+      <div class="price">
+        <span class="now"><small>R$</small>19,90</span>
+        <span class="note">pagamento único · Pix, cartão ou boleto</span>
+      </div>
+      <a class="btn" href="https://pay.kiwify.com.br/QaE48Zz">
+        Quero pagar menos
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <div class="mini">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Acesso na hora</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>7 dias de garantia</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Celular, PC ou impresso</span>
+      </div>
+    </div>
+    <div class="cover">
+      <img src="img/capa.jpg" alt="Capa do e-book Pague Menos em Tudo" width="900" height="1274">
+    </div>
+  </div>
+</header>
+
+<section class="pain">
+  <div class="wrap">
+    <div class="kicker">O problema</div>
+    <h2 class="h2">Você trabalha duro pelo seu dinheiro. Então por que pagar a mais pelas mesmas coisas?</h2>
+    <p class="lead">A maioria das pessoas não gasta demais por luxo. Perde dinheiro em pequenos erros que se repetem todo mês.</p>
+    <div class="pain-grid">
+      <div class="card"><div class="x">✕</div><h3>Compra pela etiqueta</h3><p>Olha o preço da prateleira e não o preço por quilo, nem o custo total. O "barato" sai caro.</p></div>
+      <div class="card"><div class="x">✕</div><h3>Cai na promoção falsa</h3><p>Aumenta antes, "baixa" depois. Sem olhar o histórico de preço, parece desconto.</p></div>
+      <div class="card"><div class="x">✕</div><h3>Paga juros sem perceber</h3><p>Parcela que esconde juros, rotativo do cartão, financiamento sem comparar o CET.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="nums">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Na ponta do lápis</div>
+      <h2 class="h2">De onde vem o "até 30%"</h2>
+      <p class="lead">Pegue uma família que gasta R$ 3.000 por mês com mercado, contas, transporte, farmácia e assinaturas. Somando a economia possível em cada área, com base nos exemplos do livro:</p>
+      <p class="fine">Aplicando só metade das ideias, já são uns R$ 450 por mês (15%). É um exemplo: o seu resultado depende dos seus gastos e hábitos.</p>
+    </div>
+    <table>
+      <tr><th>Área</th><th class="r">Economia/mês</th></tr>
+      <tr><td>Mercado</td><td class="r">R$ 270</td></tr>
+      <tr><td>Luz, celular e internet</td><td class="r">R$ 150</td></tr>
+      <tr><td>Combustível e seguro</td><td class="r">R$ 150</td></tr>
+      <tr><td>Tarifas do banco</td><td class="r">R$ 45</td></tr>
+      <tr><td>Farmácia</td><td class="r">R$ 60</td></tr>
+      <tr><td>Assinaturas e pequenos gastos</td><td class="r">R$ 220</td></tr>
+      <tr class="total"><td>Total</td><td class="r">≈ R$ 895 (30%)</td></tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">O que tem dentro</div>
+    <h2 class="h2">12 capítulos, um para cada lugar onde o seu dinheiro escapa</h2>
+    <div class="chap-grid">
+      <div class="chap"><span class="n">01</span><div><h3>A cabeça de quem paga menos</h3><p>Os 4 jeitos de enxergar o preço antes de comprar.</p></div></div>
+      <div class="chap"><span class="n">02</span><div><h3>Supermercado</h3><p>Lista, marca própria, preço por quilo e a hora certa.</p></div></div>
+      <div class="chap"><span class="n">03</span><div><h3>Contas da casa</h3><p>Luz, água, gás, internet e celular mais baratos.</p></div></div>
+      <div class="chap"><span class="n">04</span><div><h3>Carro</h3><p>Comprar sem armadilha, etanol ou gasolina, seguro.</p></div></div>
+      <div class="chap"><span class="n">05</span><div><h3>Casa própria e aluguel</h3><p>CET, matrícula, ITBI e como negociar.</p></div></div>
+      <div class="chap"><span class="n">06</span><div><h3>Viagens</h3><p>Alerta de preço, milhas com bônus, hospedagem esperta.</p></div></div>
+      <div class="chap"><span class="n">07</span><div><h3>Compras online</h3><p>Histórico de preço, cupom e cashback.</p></div></div>
+      <div class="chap"><span class="n">08</span><div><h3>Cartão de crédito</h3><p>Anuidade zero, pontos ou cashback, parcelado a seu favor.</p></div></div>
+      <div class="chap"><span class="n">09</span><div><h3>Dívidas</h3><p>O mapa das dívidas e como trocar dívida cara por barata.</p></div></div>
+      <div class="chap"><span class="n">10</span><div><h3>Banco e tarifas</h3><p>Cortar tarifas e fazer o dinheiro parado render.</p></div></div>
+      <div class="chap"><span class="n">11</span><div><h3>Farmácia e saúde</h3><p>Genéricos, programas de desconto e exames.</p></div></div>
+      <div class="chap"><span class="n">12</span><div><h3>Assinaturas</h3><p>A auditoria dos pequenos vazamentos do mês.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="how">
+  <div class="wrap">
+    <div class="kicker" style="color:var(--green2)">Simples de aplicar</div>
+    <h2 class="h2">Cada capítulo segue o mesmo caminho</h2>
+    <p class="lead">Primeiro o jeito errado, depois o jeito certo. Sem enrolação e sem termo difícil.</p>
+    <div class="steps">
+      <div class="step"><div class="ic">🚫</div><h3>O erro mais comum</h3><p>O que quase todo mundo faz, e por que sai caro.</p></div>
+      <div class="step"><div class="ic">✅</div><h3>O jeito certo</h3><p>Passo a passo, na ordem em que você faz.</p></div>
+      <div class="step"><div class="ic">🧮</div><h3>Na ponta do lápis</h3><p>Exemplos com números para ver a diferença.</p></div>
+      <div class="step"><div class="ic">💡</div><h3>Truques</h3><p>Coisas que funcionam e pouca gente usa.</p></div>
+      <div class="step"><div class="ic">☑️</div><h3>Checklist</h3><p>Para marcar e não esquecer nada.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Por dentro</div>
+    <h2 class="h2">Dê uma olhada nas páginas</h2>
+    <p class="hint">Arraste para o lado e toque numa página para ampliar.</p>
+    <div class="peek-row">
+      <figure><img src="img/p-sumario.jpg" alt="Página do sumário" loading="lazy"><figcaption>Sumário</figcaption></figure>
+      <figure><img src="img/p-economia.jpg" alt="Página com a regra de ouro e a tabela de economia" loading="lazy"><figcaption>A conta dos 30%</figcaption></figure>
+      <figure><img src="img/p-truque.jpg" alt="Página com um truque e checklist" loading="lazy"><figcaption>Truque + checklist</figcaption></figure>
+      <figure><img src="img/p-carro.jpg" alt="Página do capítulo do carro" loading="lazy"><figcaption>Carro: o jeito certo</figcaption></figure>
+      <figure><img src="img/p-plano.jpg" alt="Página do plano de 30 dias" loading="lazy"><figcaption>Plano de 30 dias</figcaption></figure>
+      <figure><img src="img/p-truques.jpg" alt="Página dos 50 truques rápidos" loading="lazy"><figcaption>50 truques rápidos</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="kicker">Bônus inclusos</div>
+    <h2 class="h2">Ferramentas para colocar em prática</h2>
+    <div class="bonus-grid">
+      <div class="bonus"><span class="tag">Bônus 1</span><h3>Plano de 30 dias</h3><p>Semana a semana, o que fazer para a economia começar já no primeiro mês.</p></div>
+      <div class="bonus"><span class="tag">Bônus 2</span><h3>Planilha do mês</h3><p>Planejado contra real, para ver para onde o dinheiro vai.</p></div>
+      <div class="bonus"><span class="tag">Bônus 3</span><h3>Mapa das dívidas</h3><p>Coloque tudo numa folha e saiba qual pagar primeiro.</p></div>
+      <div class="bonus"><span class="tag">Bônus 4</span><h3>50 truques rápidos</h3><p>Uma lista para consultar sempre que for comprar algo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="offer" id="comprar">
+  <div class="wrap">
+    <div class="offer-box">
+      <div class="offer-head"><h2>Pague Menos em Tudo</h2></div>
+      <div class="offer-body">
+        <ul class="list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>E-book completo em PDF, 52 páginas, 12 capítulos</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Plano de 30 dias</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Planilha do mês e mapa das dívidas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>50 truques rápidos</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Acesso imediato, para ler no celular ou imprimir</li>
+        </ul>
+        <div class="big-price"><small>R$</small>19,90</div>
+        <p class="pay">pagamento único · Pix, cartão parcelado ou boleto</p>
+        <a class="btn" href="https://pay.kiwify.com.br/QaE48Zz">
+          Comprar agora
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <div class="guar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          <p><b>Garantia de 7 dias.</b> Se não gostar, peça o reembolso dentro de 7 dias e você recebe 100% do valor de volta.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker" style="text-align:center">Dúvidas</div>
+    <h2 class="h2" style="text-align:center">Perguntas frequentes</h2>
+    <div class="faq">
+      <details><summary>Como recebo o e-book?</summary><p>Logo depois do pagamento você recebe um e-mail da Kiwify com o acesso à área de membros, onde baixa o PDF. No Pix e no cartão, o acesso é na hora. No boleto, depois da compensação.</p></details>
+      <details><summary>Consigo ler no celular?</summary><p>Sim. O PDF abre no celular, no tablet e no computador, e também pode ser impresso.</p></details>
+      <details><summary>Preciso ganhar muito para usar as dicas?</summary><p>Não. As dicas são para o dia a dia: mercado, contas, transporte, cartão. Quem ganha pouco é quem mais sente a diferença.</p></details>
+      <details><summary>É pagamento único ou assinatura?</summary><p>Pagamento único de R$ 19,90. Não tem mensalidade.</p></details>
+      <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias de garantia. É só pedir o reembolso pela Kiwify e recebe o valor de volta.</p></details>
+      <details><summary>Vou mesmo economizar 30%?</summary><p>30% é um exemplo calculado com os números do livro para uma família com R$ 3.000 por mês em gastos variáveis. Cada pessoa tem um resultado diferente, dependendo dos seus gastos e de quantas dicas aplicar.</p></details>
+    </div>
+    <p style="text-align:center;margin-top:40px"><a class="btn" href="https://pay.kiwify.com.br/QaE48Zz">Quero o e-book por R$ 19,90</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b style="color:#fff">Pagando Mais Barato Ainda</b> · Siga no Instagram: <a href="https://www.instagram.com/pagandomaisbarato_/">@pagandomaisbarato_</a></p>
+    <p style="margin-top:6px">Pagamento processado com segurança pela Kiwify.</p>
+    <p class="disc">Conteúdo educativo. Não é recomendação financeira individual. Os valores de economia são exemplos e os resultados variam de pessoa para pessoa.</p>
+  </div>
+</footer>
+
+<div class="sticky" id="sticky">
+  <div class="p">R$ 19,90<small>acesso imediato</small></div>
+  <a class="btn" href="https://pay.kiwify.com.br/QaE48Zz">Comprar agora</a>
+</div>
+
+<div class="lb" id="lb"><img alt=""></div>
+
+<script>
+  const st=document.getElementById('sticky'), hero=document.querySelector('.hero'), offer=document.getElementById('comprar');
+  let heroOut=false, offerIn=false;
+  const upd=()=>st.classList.toggle('on',heroOut&&!offerIn);
+  new IntersectionObserver(e=>{heroOut=!e[0].isIntersecting;upd()}).observe(hero);
+  new IntersectionObserver(e=>{offerIn=e[0].isIntersecting;upd()}).observe(offer);
+  const lb=document.getElementById('lb'), lbi=lb.querySelector('img');
+  document.querySelectorAll('.peek-row img').forEach(i=>i.addEventListener('click',()=>{lbi.src=i.src;lbi.alt=i.alt;lb.classList.add('on')}));
+  lb.addEventListener('click',()=>lb.classList.remove('on'));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+</script>
+</body>
+</html>
